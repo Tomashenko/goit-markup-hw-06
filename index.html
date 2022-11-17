@@ -55,25 +55,43 @@
 
                         <div class="form-field">
                         <label class="form-label" for="name">Ім'я</label>
-                        <input class="form-input" type="text" name="name" id="name" />
-                        <svg class="icon-inputs" width="18" height="18">
+                        <input class="form-input" type="text" name="name" id="name"/>
+                        <svg class="icon-input" width="18" height="18">
                             <use href="./img/symbol-defs.svg#icon-person"></use>
                         </svg></div>
 
+                        <div class="form-field">  
                         <label class="form-label" for="tel">Телефон</label>
                         <input class="form-input" type="tel" name="tel" id="tel"/>
+                        <svg class="icon-input" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        </div>
 
+                        <div class="form-field">
                         <label class="form-label" for="email">Пошта</label>
-                        <input class="form-input" type="email" name="email" id="email" >
-                        
+                        <input class="form-input" type="email" name="email" id="email">
+                        <svg class="icon-input" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                        </div>
+
+                        <div class="form-field-comment">
                         <label class="form-label" for="comment">Коментар</label>
-                        <textarea class="form-input" name="comment" id="comment" rows="" placeholder="Введіть текст"></textarea>
+                        <textarea class="form-input input-comment" name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+                        </div>
 
-                        <input class="form-input checkbox"  type="checkbox" name="contract" value="contract" id="contract"/>
-                        <label class="form-label" for="contract">Погоджуюся з розсилкою та приймаю Умови договору</label> 
+                        <div class="field-checkbox">
+                        <label class="lable-checkbox">
+                        <input class="checkbox"  type="checkbox" name="contract" value="contract"/>
+                        <svg class="icon-check" width="16" height="15">
+                            <use href="./img/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                        Погоджуюся з розсилкою та приймаю <a class="link-checkbox" href="">Умови договору</a></label> 
+                        </div>
 
 
-                        <button type="submit">Відправити</button>
+                        <button class="form-button" type="submit">Відправити</button>
                        
                     </form>
                 </div>
@@ -407,6 +425,16 @@
                 </a>
             </li>
          </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h2 class="title-list-footer">ПіДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                <div class="item-subscribe">
+                <input class="footer-input" type="email" name="email" placeholder="E-mail"/>
+                <div class="button-subscribe"><button class="footer-button" type="submit">Підписатися</button>
+                <svg class="icon-send" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+                </svg></div>
+                </div>
             </div>
         </div>
     </footer>
